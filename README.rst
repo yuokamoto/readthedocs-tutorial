@@ -6,4 +6,13 @@ with some basic Sphinx docs.
 
 Read the tutorial here:
 
-https://docs.readthedocs.io/en/stable/tutorial/
+https://yu-readthedocs-tutorial.readthedocs.io/en/stable/
+
+## locally test
+### doxygen
+
+### Sphinx
+- generate and open file:///<path to output dir>/index.html
+```
+sphinx-build -a docs/source <output/dir>
+```

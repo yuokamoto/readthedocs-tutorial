@@ -1,5 +1,10 @@
 # Configuration file for the Sphinx documentation builder.
 
+import sys
+import os
+sys.path.insert(0, os.path.abspath("../../py"))
+
+
 # -- Project information
 
 project = 'Lumache'
