@@ -11,8 +11,9 @@ https://yu-readthedocs-tutorial.readthedocs.io/en/stable/
 ## locally test
 ### doxygen
 
+
 ### Sphinx
-- generate and open file:///<path to output dir>/index.html
 ```
 sphinx-build -a docs/source <output/dir>
 ```
+open file:///<path to output dir>/index.html
