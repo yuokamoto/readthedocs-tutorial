@@ -154,3 +154,12 @@ dmypy.json
 cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks
+
+# outputs of generated document
+cpp/build/
+cpp/man/
+cpp/html/
+cpp/xml/
+cpp/latex/
+
+sphinx_output/
