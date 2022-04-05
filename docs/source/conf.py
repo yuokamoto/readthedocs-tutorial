@@ -2,8 +2,18 @@
 
 import sys
 import os
-sys.path.insert(0, os.path.abspath("../../py"))
+import subprocess
 
+
+read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
+if read_the_docs_build:
+
+    subprocess.call('cd ../doxygen; doxygen', shell=True)
+
+else :
+    sys.path.append( "/usr/local/lib/python3.9/site-packages/breathe/" )
+
+sys.path.insert(0, os.path.abspath("../../py"))
 
 # -- Project information
 
@@ -22,6 +32,9 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx.ext.imgmath', 
+    'sphinx.ext.todo', 
+    'breathe' 
 ]
 
 intersphinx_mapping = {
@@ -38,3 +51,6 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+breathe_projects = { "myproject": "../xml" }
+breathe_default_project = "myproject"
