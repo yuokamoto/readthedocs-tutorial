@@ -5,3 +5,4 @@ Foo
 
 .. doxygenfile:: sample_class.hpp
    :project: myproject
+   :allow-dot-graphs:

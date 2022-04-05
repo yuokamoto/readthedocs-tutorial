@@ -34,7 +34,8 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.imgmath', 
     'sphinx.ext.todo', 
-    'breathe' 
+    'breathe', 
+    "sphinx.ext.graphviz"
 ]
 
 intersphinx_mapping = {
