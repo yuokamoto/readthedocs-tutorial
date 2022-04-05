@@ -55,3 +55,5 @@ epub_show_urls = 'footnote'
 
 breathe_projects = { "myproject": "../xml" }
 breathe_default_project = "myproject"
+
+html_extra_path = ['../html']
