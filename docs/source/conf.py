@@ -8,7 +8,7 @@ import subprocess
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 if read_the_docs_build:
 
-    subprocess.call('cd ../doxygen; doxygen', shell=True)
+    subprocess.call('cd ..; doxygen', shell=True)
 
 else :
     sys.path.append( "/usr/local/lib/python3.9/site-packages/breathe/" )
