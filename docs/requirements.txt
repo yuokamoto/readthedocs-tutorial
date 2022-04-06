@@ -1,2 +1,17 @@
 breathe
 graphviz
+
+docutils>=0.12
+Jinja2>=2.7.3
+MarkupSafe>=0.23
+Pygments>=1.6
+Sphinx>=3.0,<5
+flake8
+pip-tools>=0.3.5
+pytest
+
+mypy>=0.900
+types-docutils>=0.14,<0.18
+types-Pygments
+
+black==22.1.0
