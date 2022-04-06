@@ -20,8 +20,9 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 html:
-	mkdir -p $(BUILDDIR)/doxygen_generated 
-	doxygen
-	$(SPHINXBUILD) -T -E -b html -d _build/doctrees -D language=en  $(SOURCEDIR) $(BUILDDIR)/html
+	#mkdir -p $(BUILDDIR)/doxygen_generated 
+	#doxygen
+	cd $(SOURCEDIR) && $(SPHINXBUILD) -T -E -b html -d _build/doctrees -D language=en  . $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	cd ..

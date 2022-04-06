@@ -156,6 +156,5 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks
 
 # outputs of generated document
-docs/build/
-docs/doxygen_generated/
+docs/source/_build/
 
