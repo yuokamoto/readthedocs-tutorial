@@ -9,13 +9,18 @@ print('conf.py')
 print('****************************************')
 
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
-if read_the_docs_build:
-    pass
-else :
-    sys.path.append( "/usr/local/lib/python3.9/site-packages/breathe/" )
+#if read_the_docs_build:
+#    pass
+#else :
+#    pass 
+    #sys.path.append( "/usr/local/lib/python3.9/site-packages/breathe/" )
 
+# -- Doxygen and breath
 subprocess.call('mkdir -p _build/html/; cd ..; doxygen', shell=True)
+breathe_projects = { "myproject": "_build/html/doxygen_generated/xml" }
+breathe_default_project = "myproject"
 
+# -- Path to python scripts
 sys.path.insert(0, os.path.abspath("../../py"))
 
 # -- Project information
@@ -55,8 +60,5 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
-
-breathe_projects = { "myproject": "_build/html/doxygen_generated/xml" }
-breathe_default_project = "myproject"
 
 # html_extra_path = ['../html']
