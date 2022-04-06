@@ -4,6 +4,7 @@ import sys
 import os
 import subprocess
 
+print('test\n\n')
 
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 if read_the_docs_build:
