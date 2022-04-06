@@ -6,8 +6,6 @@ import subprocess
 
 print('****************************************')
 print('conf.py')
-res = subprocess.call('dot')
-print(res)
 print('****************************************')
 
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
