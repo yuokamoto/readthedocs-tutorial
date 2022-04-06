@@ -20,7 +20,6 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 html:
-	mkdir -p build
 	doxygen
 	$(SPHINXBUILD) -a $(SOURCEDIR) $(BUILDDIR)/html
 	@echo

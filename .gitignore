@@ -157,3 +157,5 @@ cython_debug/
 
 # outputs of generated document
 docs/build/
+docs/doxygen_generated/
+
