@@ -157,8 +157,3 @@ cython_debug/
 
 # outputs of generated document
 docs/build/
-docs/man/
-docs/html/
-docs/xml/
-docs/latex/
-
