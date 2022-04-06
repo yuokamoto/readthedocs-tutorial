@@ -6,7 +6,7 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
-BUILDDIR      = build
+BUILDDIR      = _build
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -20,7 +20,8 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 html:
+	mkdir -p $(BUILDDIR)/doxygen_generated 
 	doxygen
-	$(SPHINXBUILD) -a $(SOURCEDIR) $(BUILDDIR)/html
+	$(SPHINXBUILD) -T -E -b html -d _build/doctrees -D language=en  $(SOURCEDIR) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
