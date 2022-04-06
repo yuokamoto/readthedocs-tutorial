@@ -3,7 +3,7 @@
 
 //!  A test class. 
 /*!
-  A more elaborate class description.
+  A more and moreelaborate class description.  
 */
 class Base
 {

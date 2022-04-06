@@ -7,21 +7,13 @@ Read the tutorial here:
 
 https://yu-readthedocs-tutorial.readthedocs.io/en/stable/
 
-## locally test
+## locally build
 
 ### doxygen
 
 ```
-cd cpp
-doxygen
+cd docs
+make --always-make html
 ```
 
-open file:///<path to cloned repo>/cpp/html/index.html
-
-### Sphinx
-
-```
-sphinx-build -a docs/source sphinx_output
-```
-
-open file:///<path to cloned repo>/sphinx_output/index.html
+open file:///<path to cloned repo>/docs/build/index.html
