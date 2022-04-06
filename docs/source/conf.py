@@ -14,7 +14,7 @@ if read_the_docs_build:
 else :
     sys.path.append( "/usr/local/lib/python3.9/site-packages/breathe/" )
 
-subprocess.call('mkdir -p _build; cd ..; doxygen', shell=True)
+subprocess.call('mkdir -p _build/html/; cd ..; doxygen', shell=True)
 
 sys.path.insert(0, os.path.abspath("../../py"))
 
@@ -56,7 +56,7 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-breathe_projects = { "myproject": "_build/doxygen_generated/xml" }
+breathe_projects = { "myproject": "_build/html/doxygen_generated/xml" }
 breathe_default_project = "myproject"
 
 # html_extra_path = ['../html']
