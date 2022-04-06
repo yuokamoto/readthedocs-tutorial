@@ -18,7 +18,6 @@ python:
     - requirements: docs/requirements.txt
     - method: pip
       path: py/
-
-formats:
-  - pdf
-  - epub
+# formats:
+#  - pdf
+#  - epub
